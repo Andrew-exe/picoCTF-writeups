@@ -1,4 +1,4 @@
-![[Pasted image 20250325232954.png]]
+![alt text](https://github.com/Andrew-exe/picoCTF-writeups/blob/main/Pasted%20image%2020250325232954.png)
 
 From the provided code, we can see that it is a radio-controlled robot challenge with encryption and communication protocol. 
 
