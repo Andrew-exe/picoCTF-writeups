@@ -1,6 +1,9 @@
+# H1
 **Homeless Sasquatch - Advay Gude**
+
 **This Method Only Work for Encrypted Cheeses That Have No Spaces**
 
+### H3
 When loading the room description up with are shown:
 ![alt text](https://github.com/Andrew-exe/picoCTF-writeups/blob/main/Pasted%20image%2020250324172052.png)
 with this hint:
