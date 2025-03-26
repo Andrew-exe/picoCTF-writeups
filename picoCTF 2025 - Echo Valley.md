@@ -121,10 +121,10 @@ Most of the protections were enabled, so instead of trying to overflow, we will 
 With this information in mind, I tried inputting multiple %p to find addresses to leak. 
 
 Using **%21$p**, we get the return value
-!(Pasted image 20250324192246.png)
+![alt text](https://github.com/Andrew-exe/picoCTF-writeups/blob/main/Pasted%20image%2020250324192246.png)
 
 and **%20$p** is the stack leak
-!(Pasted image 20250324192511.png)
+![alt text](https://github.com/Andrew-exe/picoCTF-writeups/blob/main/Pasted%20image%2020250324192511.png)
 
 Using this information, we found the offset using GDB to get the return address of the echo_valley() function and also the print_flag() address. 
 
@@ -216,4 +216,4 @@ p.interactive()
 ```
 
 After running the code and remotely connecting to the server we get the flag. 
-!(Pasted image 20250324193118.png)
+![alt text](https://github.com/Andrew-exe/picoCTF-writeups/blob/main/Pasted%20image%2020250324193118.png)
