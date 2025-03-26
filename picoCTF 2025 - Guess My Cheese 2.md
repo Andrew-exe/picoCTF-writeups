@@ -13,7 +13,7 @@ and three hints:
 The list of cheeses that was given was a text file with names of known cheese. 
 Connecting to the program we see 
 
-![[Pasted image 20250324205156.png]]
+![alt text](https://github.com/Andrew-exe/picoCTF-writeups/blob/main/Pasted%20image%2020250324205156.png)
 
 We are prompted to guess the correct cheese from the cheese_list.txt file they gave us so that it matches the encrypted cheese: `625c5bcd5f0781cfa21a27658ce36132c7c19c148dab558e9f66a8e7a4fef95b`
 
@@ -23,7 +23,7 @@ At first, we created numerous rainbow tables to try and brute force the cheese, 
 
 After numerous attempts, we got the hash `5ccdf4042bc999c778123fcbf6a295074bb8407fa2a86b635a90ffb8c22ddc53` 
 that when decoded in https://hashes.com/en/decrypt/hash, returned:
-![[Pasted image 20250324210520.png]]
+![alt text](https://github.com/Andrew-exe/picoCTF-writeups/blob/main/Pasted%20image%2020250324210520.png)
 
 `banon` was a cheese one of the cheeses given in the cheese_list.txt file from the room, and the `f` at the end was the salt. 
 
@@ -71,20 +71,20 @@ for cheese in inputFile:
         outputFile.write(f'{hashed_salted_cheese}\tPlaintext: {cheese}: {salt:02x}\n')
 ```
 Giving us the file `SHA256`with all combinations:
-![[Pasted image 20250324211237.png]]
+![alt text](https://github.com/Andrew-exe/picoCTF-writeups/blob/main/Pasted%20image%2020250324211237.png)
 
 Then, we connect to the remote server `nc verbal-sleep.picoctf.net 54455` 
 
-![[Pasted image 20250324211353.png]]
+![alt text](https://github.com/Andrew-exe/picoCTF-writeups/blob/main/Pasted%20image%2020250324211353.png)
 
 Take the encrypted cheese and search for it in the SHA256 file we created earlier that had the table of all cheeses.
 
-![[Pasted image 20250324211516.png]]
+![alt text](https://github.com/Andrew-exe/picoCTF-writeups/blob/main/Pasted%20image%2020250324211516.png)
 
 Put it into the server:
 
-![[Pasted image 20250324211607.png]]
+![alt text](https://github.com/Andrew-exe/picoCTF-writeups/blob/main/Pasted%20image%2020250324211607.png)
 
 and we get the flag!
 
-![[Pasted image 20250324211627.png]]
+![alt text](https://github.com/Andrew-exe/picoCTF-writeups/blob/main/Pasted%20image%2020250324211627.png)
