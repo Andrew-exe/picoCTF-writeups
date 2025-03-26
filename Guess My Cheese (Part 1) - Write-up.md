@@ -20,11 +20,14 @@ We went to the website, [https://www.dcode.fr/affine-cipher](https://www.dcode.f
 With the coefficients of A is 7 and B is 5 we got the decrypted cheese, **Acorn**.
 Then we replace those values to where it says to put the A and B coefficients
 ![alt text](https://github.com/Andrew-exe/picoCTF-writeups/blob/main/Pasted%20image%2020250325123255.png)
+
 After we replace those numbers, we go back to the remote connections and we get the original encoded cheese and the paste it back into the affine decoder.
 ![alt text](https://github.com/Andrew-exe/picoCTF-writeups/blob/main/Pasted%20image%2020250325123328.png)
+
 Then instead of using the automatic brute force decryption we use the manual option with the inputted A and B coefficients and used the decrypt option. 
 It outputted the:
 ![alt text](https://github.com/Andrew-exe/picoCTF-writeups/blob/main/Pasted%20image%2020250325123353.png)
+
 Using this we go back to the instance and choose the guess option and paste the results we got from the affine cipher.
 ![alt text](https://github.com/Andrew-exe/picoCTF-writeups/blob/main/Pasted%20image%2020250325123457.png)
 After inputting this we should get the flag: 
