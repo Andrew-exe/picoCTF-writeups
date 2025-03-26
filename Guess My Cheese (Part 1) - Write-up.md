@@ -1,7 +1,7 @@
  
-#**Homeless Sasquatch - Advay Gude**
+# **Homeless Sasquatch - Advay Gude**
 
-#**This Method Only Work for Encrypted Cheeses That Have No Spaces**
+# **This Method Only Work for Encrypted Cheeses That Have No Spaces**
 
  
 When loading the room description up with are shown:
