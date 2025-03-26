@@ -26,7 +26,7 @@ After we replace those numbers, we go back to the remote connections and we get 
 
 Then instead of using the automatic brute force decryption we use the manual option with the inputted A and B coefficients and used the decrypt option. 
 It outputted the:
-</n>![alt text](https://github.com/Andrew-exe/picoCTF-writeups/blob/main/Pasted%20image%2020250325123353.png)
+<\n>![alt text](https://github.com/Andrew-exe/picoCTF-writeups/blob/main/Pasted%20image%2020250325123353.png)
 
 Using this we go back to the instance and choose the guess option and paste the results we got from the affine cipher.
 ![alt text](https://github.com/Andrew-exe/picoCTF-writeups/blob/main/Pasted%20image%2020250325123457.png)
