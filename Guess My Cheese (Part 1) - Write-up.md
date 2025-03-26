@@ -6,8 +6,10 @@
  
 When loading the room description up with are shown:
 ![alt text](https://github.com/Andrew-exe/picoCTF-writeups/blob/main/Pasted%20image%2020250324172052.png)
+
 with this hint:
 ![alt text](https://github.com/Andrew-exe/picoCTF-writeups/blob/main/Pasted%20image%2020250324172104.png)
+
 Using the hint we realized the secret cheese was likely encrypted with an Affine Cipher as it used linear equations.
 
 When running the instance it returned:
