@@ -115,7 +115,7 @@ Looking at echo_valley we immediately see a ```printf(buf);```that uses the buff
 
 I took a look at the executable binary file with ```checksec``` 
 
-![alt text](Pasted image 20250324190354.png)
+![alt text](https://github.com/Andrew-exe/picoCTF-writeups/blob/main/Pasted%20image%2020250324190354.png)
 Most of the protections were enabled, so instead of trying to overflow, we will need to replace the return value of the stack in the echo_valley() function to the address of the print_flag() function.
 
 With this information in mind, I tried inputting multiple %p to find addresses to leak. 
